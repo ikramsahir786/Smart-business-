@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;color:#171717;background:#f7f5f1}
+a{text-decoration:none;color:inherit}
+.header{height:82px;padding:0 6%;display:flex;align-items:center;justify-content:space-between;background:#f7f5f1;position:sticky;top:0;z-index:10;border-bottom:1px solid #ddd9d2}
+.logo{font-weight:600;letter-spacing:.08em;font-size:18px}.logo span{font-weight:400;margin-left:4px}
+nav{display:flex;gap:34px;font-size:13px;text-transform:uppercase;letter-spacing:.08em}
+nav a:hover,.text-link:hover{opacity:.55}.menu{display:none;background:none;border:0;font-size:25px}
+.hero{min-height:78vh;display:flex;align-items:center;padding:8% 8%;background:linear-gradient(90deg,rgba(12,12,12,.8),rgba(12,12,12,.08)),linear-gradient(135deg,#332d29,#988d83 55%,#ddd4c9);color:#fff}
+.hero-content{max-width:650px}.eyebrow{font-size:11px;letter-spacing:.2em;font-weight:600;margin-bottom:18px;opacity:.72}
+h1{font-size:clamp(58px,8vw,112px);line-height:.91;font-weight:500;letter-spacing:-.055em}h1 em,h2 em{font-family:'Playfair Display',serif;font-weight:500}
+.hero-text{max-width:470px;margin:28px 0 34px;font-size:16px;line-height:1.7;color:#eee}
+.btn{display:inline-block;padding:15px 25px;background:#fff;color:#111;font-size:12px;text-transform:uppercase;letter-spacing:.12em;font-weight:600}.btn.dark{background:#171717;color:#fff}
+.section{padding:100px 7%}.light{background:#fff}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:45px}.section-head h2,.about h2,.contact h2{font-size:clamp(38px,5vw,64px);font-weight:500;letter-spacing:-.04em}.section-head>p{max-width:250px;line-height:1.6;color:#777}
+.categories{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.category{height:500px;position:relative;overflow:hidden;display:flex;align-items:end;padding:32px;color:#fff;background-size:cover;background-position:center}
+.category:before{content:"";position:absolute;inset:0;background:linear-gradient(transparent 35%,rgba(0,0,0,.7))}
+.category>div{position:relative}.category span{font-size:12px;opacity:.7}.category h3{font-size:38px;font-weight:500;margin:6px 0 12px}.category a{font-size:12px;text-transform:uppercase;letter-spacing:.12em}
+.men{background:linear-gradient(145deg,#27231f,#82756a)}.women{background:linear-gradient(145deg,#5a4c48,#c5afa4)}.kids{background:linear-gradient(145deg,#425052,#a6b2ae)}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.product-image{height:430px;background-size:cover}.p1{background:linear-gradient(145deg,#e7e0d8,#988b7e)}.p2{background:linear-gradient(145deg,#d5d0c8,#55524d)}.p3{background:linear-gradient(145deg,#d9c6bb,#765e53)}
+.product h3{font-size:18px;font-weight:500;margin-top:18px}.product p{color:#888;font-size:13px;margin-top:6px}
+.about{padding:110px 12%;display:grid;grid-template-columns:1fr 1fr;gap:100px;background:#e8e2d9}.about p:not(.eyebrow){font-size:18px;line-height:1.8;color:#555;margin-bottom:22px}
+.contact{background:#171717;color:#fff}.contact-box{display:grid;grid-template-columns:1.3fr 1fr;gap:80px}.contact h2{margin-bottom:22px}.contact-box>div:first-child>p:last-child{color:#aaa;line-height:1.7;max-width:500px}.contact-details{border-top:1px solid #555;padding-top:22px}.contact-details p{margin-bottom:25px;line-height:1.6}.contact-details strong{font-size:11px;text-transform:uppercase;letter-spacing:.15em;color:#999}
+footer{padding:35px 7%;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:#777;background:#111}.footer .logo{color:#fff}
+@media(max-width:760px){nav{display:none}.menu{display:block}.header{padding:0 5%}.hero{min-height:78vh;padding:14% 7%}.section{padding:70px 6%}.section-head,.about,.contact-box{display:block}.section-head>p{margin-top:18px}.categories,.products{grid-template-columns:1fr}.category{height:390px}.product-image{height:390px}.about>div+div{margin-top:35px}.contact-box>div+div{margin-top:50px}footer{display:block}footer p{margin-top:12px}}
